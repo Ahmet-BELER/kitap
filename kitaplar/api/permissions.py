@@ -14,4 +14,7 @@ class IsYorumSahibiReadOnly(permissions.BasePermission):
         if request.method in permissions.SAFE_METHODS:
             return True
         
-        return request.user == obj.yorum_sahibi
+        return request.user == obj.yorum_sahibi 
+    
+    
+    
